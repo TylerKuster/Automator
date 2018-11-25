@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>444.39</string>
+	<key>AMApplicationVersion</key>
+	<string>2.9</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.url</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>2.0.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Safari</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>URLlist</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.url</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Get Specified URLs.action</string>
+				<key>ActionName</key>
+				<string>Get Specified URLs</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>URLlist</key>
+					<array>
+						<array>
+							<true/>
+							<string></string>
+							<string>https://www.instagram.com/explore/tags/coffee/</string>
+						</array>
+						<array>
+							<true/>
+							<string></string>
+							<string>https://www.instagram.com/explore/tags/кофе/</string>
+						</array>
+						<array>
+							<true/>
+							<string></string>
+							<string>https://www.instagram.com/explore/tags/latte/</string>
+						</array>
+						<array>
+							<true/>
+							<string></string>
+							<string>https://www.instagram.com/explore/tags/kahve/</string>
+						</array>
+						<array>
+							<true/>
+							<string></string>
+							<string>https://www.instagram.com/explore/tags/커피/</string>
+						</array>
+						<array>
+							<true/>
+							<string></string>
+							<string>https://www.instagram.com/explore/tags/café/</string>
+						</array>
+						<array>
+							<true/>
+							<string></string>
+							<string>https://www.instagram.com/explore/tags/matcha/</string>
+						</array>
+					</array>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.URLList</string>
+				<key>CFBundleVersion</key>
+				<string>2.0.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryInternet</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMURLListAction</string>
+				<key>InputUUID</key>
+				<string>482F1556-33EA-4D80-8838-A8FEB9C8E940</string>
+				<key>Keywords</key>
+				<array>
+					<string>Web</string>
+					<string>URL</string>
+					<string>Library</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>D0EAA69D-2FC6-457D-9A35-5B6AC221AD46</string>
+				<key>UUID</key>
+				<string>3C34EE82-157E-4795-8A3C-861CDF79DC29</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Safari</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<array/>
+						<key>name</key>
+						<string>URLlist</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>755.500000:227.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Get Specified URLs.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<false/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.url</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Safari</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict/>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.url</string>
+					</array>
+				</dict>
+				<key>AMRequiredResources</key>
+				<array/>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Display Webpages 2.action</string>
+				<key>ActionName</key>
+				<string>Display Webpages</string>
+				<key>ActionParameters</key>
+				<dict/>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.DisplayWebpages</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<false/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryInternet</string>
+				</array>
+				<key>Class Name</key>
+				<string>Display_Webpages</string>
+				<key>InputUUID</key>
+				<string>CB360F4E-4DDC-4073-8BAF-D460F360D7B0</string>
+				<key>Keywords</key>
+				<array>
+					<string>URL</string>
+					<string>Web</string>
+					<string>Display</string>
+					<string>Open</string>
+					<string>Show</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>6AD43BA7-0998-4AA6-97C3-396AFE642967</string>
+				<key>UUID</key>
+				<string>377D3B7E-D83E-473D-89CF-44F1165E26CC</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Safari</string>
+				</array>
+				<key>arguments</key>
+				<dict/>
+			</dict>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {input, parameters}	delay 7.332081		set hashtagCount to 7		set likeCount to 30		set tabsToMostRecent to 13	set timeoutSeconds to 20.0		my doPrepareTabs(hashtagCount, tabsToMostRecent, timeoutSeconds)	my doLikePosts(hashtagCount, likeCount)end runon doPrepareTabs(hashtagCount, tabsToMostRecent, timeoutSeconds)	set tabScript to "keystroke \"	\" using option down"	set returnScript to "keystroke \"\" "	set tabSwitchScript to "keystroke \"	\" using control down"		repeat hashtagCount times -- Once per hashtag tab		try			my doTabWithTimeout(tabScript, tabsToMostRecent, timeoutSeconds)			my doReturnWithTimeout(returnScript, timeoutSeconds)			my doTabSwitchWithTimeout(tabSwitchScript, timeoutSeconds)			delay 1.332081		on error errorMessage					end try	end repeatend doPrepareTabson doLikePosts(hashtagCount, likeCount)	set clickLikeScript to "click UI Element \"Like\" of group 1 of group 1 of group 1 of group 1 of UI Element 1 of scroll area 1 of group 1 of group 1 of tab group 1 of splitter group 1 of window 1 of application process \"Safari\""	set rightArrowScript to "keystroke \"\""	set closeTabScript to "keystroke \"w\" using command down"		repeat hashtagCount times		try			set endDate to (current date) + 15			repeat likeCount times				try					run script "tell application \"System Events\"					" &amp; clickLikeScript &amp; "					end tell"										delay 1.332081										run script "tell application \"System Events\"					" &amp; rightArrowScript &amp; "					end tell"										delay 1.332081									on error errorMessage										--		if ((current date) &gt; endDate) then					--			run script "tell application \"System Events\"					--		" &amp; closeTabScript &amp; "					--		end tell"										--					delay 1.332081					--				end if				end try			end repeat					on error errorMessage					end try				try			run script "tell application \"System Events\"			" &amp; closeTabScript &amp; "			end tell"						delay 0.332081					on error errorMessage					end try	end repeatend doLikePosts-- Tab to most recent pictureon doTabWithTimeout(tabScript, tabsToMostRecent, timeoutSeconds)	--	set endDate to (current date) + timeoutSeconds		repeat tabsToMostRecent times -- Tab to most recent picture		try			run script "tell application \"System Events\"" &amp; tabScript &amp; "end tell"			delay 1.332081					on error errorMessage					end try	end repeatend doTabWithTimeout-- Press Return to open the pictureon doReturnWithTimeout(returnScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; returnScript &amp; "end tell"			exit repeat		on error errorMessage					end try	end repeatend doReturnWithTimeout-- Press control + tab to switch browser tabson doTabSwitchWithTimeout(tabSwitchScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; tabSwitchScript &amp; "end tell"			exit repeat		on error errorMessage					end try	end repeatend doTabSwitchWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>IgnoresInput</key>
+				<false/>
+				<key>InputUUID</key>
+				<string>8E25081E-4B9E-4F7D-A62B-473210B27CAB</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>C9B4C147-B0B8-4686-8084-2C86C5ACD5F1</string>
+				<key>ShowWhenRun</key>
+				<false/>
+				<key>UUID</key>
+				<string>68CB203C-955A-4ED1-978E-4C152C7FFE59</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>755.500000:537.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>v.1.2.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Mail</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>account</key>
+					<dict/>
+					<key>bccAddresses</key>
+					<dict/>
+					<key>ccAddresses</key>
+					<dict/>
+					<key>message</key>
+					<dict/>
+					<key>messageRTFData</key>
+					<dict/>
+					<key>subject</key>
+					<dict>
+						<key>tokenizedValue</key>
+						<array>
+							<string>$(69D3C250-4681-4A4A-8E81-818CE336EA0C)</string>
+							<string> </string>
+							<string>$(28289332-662E-47AE-ABFF-C68AE3502A84)</string>
+							<string>, </string>
+							<string>$(56972CFD-0CB3-4CA8-968C-C43B4FE0DB58)</string>
+							<string> - Like Report C</string>
+						</array>
+					</dict>
+					<key>toAddresses</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.mail.message-object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/New Mail Message.action</string>
+				<key>ActionName</key>
+				<string>New Mail Message</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>account</key>
+					<string>defaultAccount</string>
+					<key>bccAddresses</key>
+					<string></string>
+					<key>ccAddresses</key>
+					<string></string>
+					<key>message</key>
+					<string>This is a test:
+
+</string>
+					<key>messageRTFData</key>
+					<data>
+					e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29j
+					b2FydGYxNjcxXGNvY29hc3VicnRmMTAwCntc
+					Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQw
+					IEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJl
+					ZDI1NVxncmVlbjI1NVxibHVlMjU1O30Ke1wq
+					XGV4cGFuZGVkY29sb3J0Ymw7O30KXHBhcmRc
+					dHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBc
+					dHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgw
+					XHR4NTA0MFx0eDU2MDBcdHg2MTYwXHR4Njcy
+					MFxwYXJkaXJuYXR1cmFsXHBhcnRpZ2h0ZW5m
+					YWN0b3IwCgpcZjBcZnMyNCBcY2YwIFRoaXMg
+					aXMgYSB0ZXN0OlwKXAp9
+					</data>
+					<key>subject</key>
+					<string>$(69D3C250-4681-4A4A-8E81-818CE336EA0C) $(28289332-662E-47AE-ABFF-C68AE3502A84), $(56972CFD-0CB3-4CA8-968C-C43B4FE0DB58) - Like Report C</string>
+					<key>toAddresses</key>
+					<string>tylerkuster@gmail.com</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.CreateNewEmail</string>
+				<key>CFBundleVersion</key>
+				<string>1.2.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryMail</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMCreateNewEmailAction</string>
+				<key>InputUUID</key>
+				<string>ED418F1C-6C84-4B10-818B-EE2DBD38E299</string>
+				<key>Keywords</key>
+				<array>
+					<string>Create</string>
+					<string>Make</string>
+					<string>Message</string>
+					<string>Mail</string>
+					<string>New</string>
+					<string>Send</string>
+					<string>Address</string>
+					<string>Image</string>
+					<string>Photo</string>
+					<string>File</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>49AC1A92-6C1D-4A55-A5CF-C4024E2F89AB</string>
+				<key>UUID</key>
+				<string>935B3582-8D90-44E2-8076-87C83FD41433</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Mail</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>defaultAccount</string>
+						<key>name</key>
+						<string>account</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+					<key>1</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>message</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>1</string>
+					</dict>
+					<key>2</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>subject</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>2</string>
+					</dict>
+					<key>3</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>bccAddresses</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>3</string>
+					</dict>
+					<key>4</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>ccAddresses</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>4</string>
+					</dict>
+					<key>5</key>
+					<dict>
+						<key>default value</key>
+						<string></string>
+						<key>name</key>
+						<string>toAddresses</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>5</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>755.500000:824.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/New Mail Message.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.mail.message-object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Mail</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict/>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.mail.message-object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Send Outgoing Messages.action</string>
+				<key>ActionName</key>
+				<string>Send Outgoing Messages</string>
+				<key>ActionParameters</key>
+				<dict/>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.SendOutgoingMessages</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<false/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryMail</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMSendOutgoingMessagesAction</string>
+				<key>InputUUID</key>
+				<string>3E6C0D06-F34D-423E-BFB9-70A6FC947307</string>
+				<key>Keywords</key>
+				<array>
+					<string>Mail</string>
+					<string>Message</string>
+					<string>Send</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>FE16617B-52AF-4FFB-B43D-DCBFEA340FC9</string>
+				<key>UUID</key>
+				<string>00BE561A-53CB-47BA-A169-0768D49100A6</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Mail</string>
+				</array>
+				<key>arguments</key>
+				<dict/>
+			</dict>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict>
+		<key>20721610-4406-46DE-93DF-D02F6D5DEE59</key>
+		<dict>
+			<key>from</key>
+			<string>3C34EE82-157E-4795-8A3C-861CDF79DC29 - 3C34EE82-157E-4795-8A3C-861CDF79DC29</string>
+			<key>to</key>
+			<string>377D3B7E-D83E-473D-89CF-44F1165E26CC - 377D3B7E-D83E-473D-89CF-44F1165E26CC</string>
+		</dict>
+		<key>39AD2A61-913C-4A1B-89E4-8B8C79185CC3</key>
+		<dict>
+			<key>from</key>
+			<string>377D3B7E-D83E-473D-89CF-44F1165E26CC - 377D3B7E-D83E-473D-89CF-44F1165E26CC</string>
+			<key>to</key>
+			<string>68CB203C-955A-4ED1-978E-4C152C7FFE59 - 68CB203C-955A-4ED1-978E-4C152C7FFE59</string>
+		</dict>
+		<key>8A9EED2B-7544-4BAF-8BF7-2632773BD8D1</key>
+		<dict>
+			<key>from</key>
+			<string>935B3582-8D90-44E2-8076-87C83FD41433 - 935B3582-8D90-44E2-8076-87C83FD41433</string>
+			<key>to</key>
+			<string>00BE561A-53CB-47BA-A169-0768D49100A6 - 00BE561A-53CB-47BA-A169-0768D49100A6</string>
+		</dict>
+		<key>F322AF07-99AA-433E-B187-21E7A0773FC3</key>
+		<dict>
+			<key>from</key>
+			<string>68CB203C-955A-4ED1-978E-4C152C7FFE59 - 68CB203C-955A-4ED1-978E-4C152C7FFE59</string>
+			<key>to</key>
+			<string>935B3582-8D90-44E2-8076-87C83FD41433 - 935B3582-8D90-44E2-8076-87C83FD41433</string>
+		</dict>
+	</dict>
+	<key>variables</key>
+	<array>
+		<dict>
+			<key>UUID</key>
+			<string>56972CFD-0CB3-4CA8-968C-C43B4FE0DB58</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.CurrentTime</string>
+			<key>name</key>
+			<string>Current time</string>
+			<key>value</key>
+			<string>h:mm a</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>28289332-662E-47AE-ABFF-C68AE3502A84</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.CurrentDay</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>E207280A-D560-4FD2-92AB-5F174B10F471</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Text</string>
+			<key>name</key>
+			<string>Text</string>
+			<key>value</key>
+			<string>Text</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>98EC3DF8-2E2D-4524-BB35-6953680CAFAA</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Storage</string>
+			<key>name</key>
+			<string>Output</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>41E7B785-BE4F-4408-AE1B-BE455F63BB4A</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.Storage</string>
+			<key>name</key>
+			<string>output</string>
+		</dict>
+		<dict>
+			<key>UUID</key>
+			<string>69D3C250-4681-4A4A-8E81-818CE336EA0C</string>
+			<key>identifier</key>
+			<string>com.apple.Automator.Variable.CurrentMonth</string>
+		</dict>
+	</array>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.application</string>
+	</dict>
+</dict>
+</plist>
