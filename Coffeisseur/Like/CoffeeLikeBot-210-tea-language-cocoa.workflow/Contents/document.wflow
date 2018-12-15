@@ -89,49 +89,6 @@
 						</array>
 					</array>
 				</dict>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>URLlist</key>
-					<array>
-						<array>
-							<true/>
-							<string></string>
-							<string>https://www.instagram.com/explore/tags/кофе/</string>
-						</array>
-						<array>
-							<true/>
-							<string></string>
-							<string>https://www.instagram.com/explore/tags/hotchocolate/</string>
-						</array>
-						<array>
-							<true/>
-							<string></string>
-							<string>https://www.instagram.com/explore/tags/coffee/</string>
-						</array>
-						<array>
-							<true/>
-							<string></string>
-							<string>https://www.instagram.com/explore/tags/latte/</string>
-						</array>
-						<array>
-							<true/>
-							<string></string>
-							<string>https://www.instagram.com/explore/tags/커피/</string>
-						</array>
-						<array>
-							<true/>
-							<string></string>
-							<string>https://www.instagram.com/explore/tags/café/</string>
-						</array>
-						<array>
-							<true/>
-							<string></string>
-							<string>https://www.instagram.com/explore/tags/tea/</string>
-						</array>
-					</array>
-					<key>temporary items path</key>
-					<string>/var/folders/4z/0_q1yl6x1m386kbsr9tj054w0000gn/T/7EC6888D-B1CA-453C-B50F-427D95A5C048/1/com.apple.Automator.URLList</string>
-				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.URLList</string>
 				<key>CFBundleVersion</key>
@@ -181,7 +138,7 @@
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>755.500000:227.000000</string>
+				<string>748.000000:227.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Get Specified URLs.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -227,11 +184,6 @@
 				<string>Display Webpages</string>
 				<key>ActionParameters</key>
 				<dict/>
-				<key>ActionRuntimeParameters</key>
-				<dict>
-					<key>temporary items path</key>
-					<string>/var/folders/4z/0_q1yl6x1m386kbsr9tj054w0000gn/T/7EC6888D-B1CA-453C-B50F-427D95A5C048/1/com.apple.Automator.DisplayWebpages</string>
-				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.DisplayWebpages</string>
 				<key>CFBundleVersion</key>
@@ -309,7 +261,9 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on run {input, parameters}	delay 7.332081		set hashtagCount to 7		set likeCount to 30		set tabsToMostRecent to 13	set timeoutSeconds to 20.0		my doPrepareTabs(hashtagCount, tabsToMostRecent, timeoutSeconds)	my doLikePosts(hashtagCount, likeCount)end runon doPrepareTabs(hashtagCount, tabsToMostRecent, timeoutSeconds)	set tabScript to "keystroke \"	\" using option down"	set returnScript to "keystroke \"\" "	set tabSwitchScript to "keystroke \"	\" using control down"		repeat hashtagCount times -- Once per hashtag tab		try			my doTabWithTimeout(tabScript, tabsToMostRecent, timeoutSeconds)			my doReturnWithTimeout(returnScript, timeoutSeconds)			my doTabSwitchWithTimeout(tabSwitchScript, timeoutSeconds)			delay 1.332081		on error errorMessage					end try	end repeatend doPrepareTabson doLikePosts(hashtagCount, likeCount)	set clickLikeScript to "click UI Element \"Like\" of group 1 of group 1 of group 1 of group 1 of UI Element 1 of scroll area 1 of group 1 of group 1 of tab group 1 of splitter group 1 of window 1 of application process \"Safari\""	set rightArrowScript to "keystroke \"\""	set closeTabScript to "keystroke \"w\" using command down"		repeat hashtagCount times		try			set endDate to (current date) + 15			repeat likeCount times				try					run script "tell application \"System Events\"					" &amp; clickLikeScript &amp; "					end tell"										delay 1.332081										run script "tell application \"System Events\"					" &amp; rightArrowScript &amp; "					end tell"										delay 1.332081									on error errorMessage										--		if ((current date) &gt; endDate) then					--			run script "tell application \"System Events\"					--		" &amp; closeTabScript &amp; "					--		end tell"										--					delay 1.332081					--				end if				end try			end repeat					on error errorMessage					end try				try			run script "tell application \"System Events\"			" &amp; closeTabScript &amp; "			end tell"						delay 0.332081					on error errorMessage					end try	end repeatend doLikePosts-- Tab to most recent pictureon doTabWithTimeout(tabScript, tabsToMostRecent, timeoutSeconds)	--	set endDate to (current date) + timeoutSeconds		repeat tabsToMostRecent times -- Tab to most recent picture		try			run script "tell application \"System Events\"" &amp; tabScript &amp; "end tell"			delay 1.332081					on error errorMessage					end try	end repeatend doTabWithTimeout-- Press Return to open the pictureon doReturnWithTimeout(returnScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; returnScript &amp; "end tell"			exit repeat		on error errorMessage					end try	end repeatend doReturnWithTimeout-- Press control + tab to switch browser tabson doTabSwitchWithTimeout(tabSwitchScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; tabSwitchScript &amp; "end tell"			exit repeat		on error errorMessage					end try	end repeatend doTabSwitchWithTimeout</string>
+					<string>on run {input, parameters}	delay 7.332081		set hashtagCount to 7		set likeCount to 30		set tabsToMostRecent to 13	set timeoutSeconds to 20.0		my doPrepareTabs(hashtagCount, tabsToMostRecent, timeoutSeconds)	my doLikePosts(hashtagCount, likeCount)
+	
+	return inputend runon doPrepareTabs(hashtagCount, tabsToMostRecent, timeoutSeconds)	set tabScript to "keystroke \"	\" using option down"	set returnScript to "keystroke \"\" "	set tabSwitchScript to "keystroke \"	\" using control down"		repeat hashtagCount times -- Once per hashtag tab		try			my doTabWithTimeout(tabScript, tabsToMostRecent, timeoutSeconds)			my doReturnWithTimeout(returnScript, timeoutSeconds)			my doTabSwitchWithTimeout(tabSwitchScript, timeoutSeconds)			delay 1.332081		on error errorMessage					end try	end repeatend doPrepareTabson doLikePosts(hashtagCount, likeCount)	set clickLikeScript to "click UI Element \"Like\" of group 1 of group 1 of group 1 of group 1 of UI Element 1 of scroll area 1 of group 1 of group 1 of tab group 1 of splitter group 1 of window 1 of application process \"Safari\""	set rightArrowScript to "keystroke \"\""	set closeTabScript to "keystroke \"w\" using command down"		repeat hashtagCount times		try			set endDate to (current date) + 15			repeat likeCount times				try					run script "tell application \"System Events\"					" &amp; clickLikeScript &amp; "					end tell"										delay 1.332081										run script "tell application \"System Events\"					" &amp; rightArrowScript &amp; "					end tell"										delay 1.332081									on error errorMessage										--		if ((current date) &gt; endDate) then					--			run script "tell application \"System Events\"					--		" &amp; closeTabScript &amp; "					--		end tell"										--					delay 1.332081					--				end if				end try			end repeat					on error errorMessage					end try				try			run script "tell application \"System Events\"			" &amp; closeTabScript &amp; "			end tell"						delay 0.332081					on error errorMessage					end try	end repeatend doLikePosts-- Tab to most recent pictureon doTabWithTimeout(tabScript, tabsToMostRecent, timeoutSeconds)	--	set endDate to (current date) + timeoutSeconds		repeat tabsToMostRecent times -- Tab to most recent picture		try			run script "tell application \"System Events\"" &amp; tabScript &amp; "end tell"			delay 1.332081					on error errorMessage					end try	end repeatend doTabWithTimeout-- Press Return to open the pictureon doReturnWithTimeout(returnScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; returnScript &amp; "end tell"			exit repeat		on error errorMessage					end try	end repeatend doReturnWithTimeout-- Press control + tab to switch browser tabson doTabSwitchWithTimeout(tabSwitchScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"" &amp; tabSwitchScript &amp; "end tell"			exit repeat		on error errorMessage					end try	end repeatend doTabSwitchWithTimeout</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -367,9 +321,91 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>755.500000:537.000000</string>
+				<string>748.000000:1094.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>*</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict/>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>*</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/View Results.action</string>
+				<key>ActionName</key>
+				<string>View Results</string>
+				<key>ActionParameters</key>
+				<dict/>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.LogOutput</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<false/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>LogOutputAction</string>
+				<key>InputUUID</key>
+				<string>B1AEF4D0-365C-48A9-B932-B6E1B4116E27</string>
+				<key>Keywords</key>
+				<array>
+					<string>Display</string>
+					<string>Show</string>
+					<string>Log</string>
+					<string>Output</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>A27AC8B5-8914-4045-AEAE-00BD31EF7E7B</string>
+				<key>UUID</key>
+				<string>50B627D1-B396-4AB7-9E69-4918119A349C</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict/>
+				<key>conversionLabel</key>
+				<integer>0</integer>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>748.000000:1274.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/View Results.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -443,24 +479,7 @@ end run</string>
 					<key>ccAddresses</key>
 					<string></string>
 					<key>message</key>
-					<string>This is a test:
-
-</string>
-					<key>messageRTFData</key>
-					<data>
-					e1xydGYxXGFuc2lcYW5zaWNwZzEyNTJcY29j
-					b2FydGYxNjcxXGNvY29hc3VicnRmMTAwCntc
-					Zm9udHRibFxmMFxmc3dpc3NcZmNoYXJzZXQw
-					IEhlbHZldGljYTt9CntcY29sb3J0Ymw7XHJl
-					ZDI1NVxncmVlbjI1NVxibHVlMjU1O30Ke1wq
-					XGV4cGFuZGVkY29sb3J0Ymw7O30KXHBhcmRc
-					dHg1NjBcdHgxMTIwXHR4MTY4MFx0eDIyNDBc
-					dHgyODAwXHR4MzM2MFx0eDM5MjBcdHg0NDgw
-					XHR4NTA0MFx0eDU2MDBcdHg2MTYwXHR4Njcy
-					MFxwYXJkaXJuYXR1cmFsXHBhcnRpZ2h0ZW5m
-					YWN0b3IwCgpcZjBcZnMyNCBcY2YwIFRoaXMg
-					aXMgYSB0ZXN0OlwKXAp9
-					</data>
+					<string></string>
 					<key>subject</key>
 					<string>$(69D3C250-4681-4A4A-8E81-818CE336EA0C) $(28289332-662E-47AE-ABFF-C68AE3502A84), $(56972CFD-0CB3-4CA8-968C-C43B4FE0DB58) - Like Report C</string>
 					<key>toAddresses</key>
@@ -587,7 +606,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>755.500000:824.000000</string>
+				<string>748.000000:1561.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/New Mail Message.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -668,33 +687,40 @@ end run</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>16DEC084-A430-48DD-ACED-DF5E2ADC99BD</key>
+		<key>53206790-DC7C-4241-AE24-75F7C3C71ACA</key>
 		<dict>
 			<key>from</key>
 			<string>3C34EE82-157E-4795-8A3C-861CDF79DC29 - 3C34EE82-157E-4795-8A3C-861CDF79DC29</string>
 			<key>to</key>
 			<string>377D3B7E-D83E-473D-89CF-44F1165E26CC - 377D3B7E-D83E-473D-89CF-44F1165E26CC</string>
 		</dict>
-		<key>27D08398-4FB9-4796-9C4F-D9A040D72DA2</key>
-		<dict>
-			<key>from</key>
-			<string>935B3582-8D90-44E2-8076-87C83FD41433 - 935B3582-8D90-44E2-8076-87C83FD41433</string>
-			<key>to</key>
-			<string>00BE561A-53CB-47BA-A169-0768D49100A6 - 00BE561A-53CB-47BA-A169-0768D49100A6</string>
-		</dict>
-		<key>56C23712-4C0A-49AF-B924-EC401DB118B2</key>
+		<key>800F5CF1-E184-42FF-A47B-DAF873A70EDB</key>
 		<dict>
 			<key>from</key>
 			<string>377D3B7E-D83E-473D-89CF-44F1165E26CC - 377D3B7E-D83E-473D-89CF-44F1165E26CC</string>
 			<key>to</key>
 			<string>68CB203C-955A-4ED1-978E-4C152C7FFE59 - 68CB203C-955A-4ED1-978E-4C152C7FFE59</string>
 		</dict>
-		<key>C023D7A3-A739-4A50-9F03-C7E81299C4C9</key>
+		<key>A29DCC98-B7C7-425E-96F5-5DC85BB112FE</key>
 		<dict>
 			<key>from</key>
 			<string>68CB203C-955A-4ED1-978E-4C152C7FFE59 - 68CB203C-955A-4ED1-978E-4C152C7FFE59</string>
 			<key>to</key>
+			<string>50B627D1-B396-4AB7-9E69-4918119A349C - 50B627D1-B396-4AB7-9E69-4918119A349C</string>
+		</dict>
+		<key>D7E1E373-BB47-42A2-A023-FA230E4157EE</key>
+		<dict>
+			<key>from</key>
+			<string>50B627D1-B396-4AB7-9E69-4918119A349C - 50B627D1-B396-4AB7-9E69-4918119A349C</string>
+			<key>to</key>
 			<string>935B3582-8D90-44E2-8076-87C83FD41433 - 935B3582-8D90-44E2-8076-87C83FD41433</string>
+		</dict>
+		<key>FA76CD35-7124-4960-8B52-2092FF8C5686</key>
+		<dict>
+			<key>from</key>
+			<string>935B3582-8D90-44E2-8076-87C83FD41433 - 935B3582-8D90-44E2-8076-87C83FD41433</string>
+			<key>to</key>
+			<string>00BE561A-53CB-47BA-A169-0768D49100A6 - 00BE561A-53CB-47BA-A169-0768D49100A6</string>
 		</dict>
 	</dict>
 	<key>variables</key>
