@@ -1,0 +1,396 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AMApplicationBuild</key>
+	<string>444.7</string>
+	<key>AMApplicationVersion</key>
+	<string>2.8</string>
+	<key>AMDocumentVersion</key>
+	<string>2</string>
+	<key>actions</key>
+	<array>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.url</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>2.0.1</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Safari</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>URLlist</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.url</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Get Specified URLs.action</string>
+				<key>ActionName</key>
+				<string>Get Specified URLs</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>URLlist</key>
+					<array>
+						<array>
+							<true/>
+							<string></string>
+							<string>https://www.instagram.com/explore/tags/kahve/</string>
+						</array>
+						<array>
+							<true/>
+							<string></string>
+							<string>https://www.instagram.com/explore/tags/кофе/</string>
+						</array>
+						<array>
+							<true/>
+							<string></string>
+							<string>https://www.instagram.com/explore/tags/커피/</string>
+						</array>
+						<array>
+							<true/>
+							<string></string>
+							<string>https://www.instagram.com/explore/tags/café/</string>
+						</array>
+						<array>
+							<true/>
+							<string></string>
+							<string>https://www.instagram.com/explore/tags/coffee/</string>
+						</array>
+					</array>
+				</dict>
+				<key>ActionRuntimeParameters</key>
+				<dict>
+					<key>URLlist</key>
+					<array>
+						<array>
+							<true/>
+							<string></string>
+							<string>https://www.instagram.com/explore/tags/kahve/</string>
+						</array>
+						<array>
+							<true/>
+							<string></string>
+							<string>https://www.instagram.com/explore/tags/кофе/</string>
+						</array>
+						<array>
+							<true/>
+							<string></string>
+							<string>https://www.instagram.com/explore/tags/커피/</string>
+						</array>
+						<array>
+							<true/>
+							<string></string>
+							<string>https://www.instagram.com/explore/tags/café/</string>
+						</array>
+						<array>
+							<true/>
+							<string></string>
+							<string>https://www.instagram.com/explore/tags/coffee/</string>
+						</array>
+					</array>
+					<key>temporary items path</key>
+					<string>/var/folders/by/ff6cfctx1ml1sdw_6z59x0k1gssrsj/T/17229349-2596-44C2-8B21-39490C8D7AFD/1/com.apple.Automator.URLList</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.URLList</string>
+				<key>CFBundleVersion</key>
+				<string>2.0.1</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<true/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryInternet</string>
+				</array>
+				<key>Class Name</key>
+				<string>AMURLListAction</string>
+				<key>InputUUID</key>
+				<string>482F1556-33EA-4D80-8838-A8FEB9C8E940</string>
+				<key>Keywords</key>
+				<array>
+					<string>Web</string>
+					<string>URL</string>
+					<string>Library</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>D0EAA69D-2FC6-457D-9A35-5B6AC221AD46</string>
+				<key>UUID</key>
+				<string>3C34EE82-157E-4795-8A3C-861CDF79DC29</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Safari</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<array/>
+						<key>name</key>
+						<string>URLlist</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>405.000000:296.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Get Specified URLs.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<false/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.url</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Safari</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict/>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.cocoa.url</string>
+					</array>
+				</dict>
+				<key>AMRequiredResources</key>
+				<array/>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Display Webpages 2.action</string>
+				<key>ActionName</key>
+				<string>Display Webpages</string>
+				<key>ActionParameters</key>
+				<dict/>
+				<key>ActionRuntimeParameters</key>
+				<dict>
+					<key>temporary items path</key>
+					<string>/var/folders/by/ff6cfctx1ml1sdw_6z59x0k1gssrsj/T/17229349-2596-44C2-8B21-39490C8D7AFD/1/com.apple.Automator.DisplayWebpages</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.DisplayWebpages</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<false/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryInternet</string>
+				</array>
+				<key>Class Name</key>
+				<string>Display_Webpages</string>
+				<key>InputUUID</key>
+				<string>CB360F4E-4DDC-4073-8BAF-D460F360D7B0</string>
+				<key>Keywords</key>
+				<array>
+					<string>URL</string>
+					<string>Web</string>
+					<string>Display</string>
+					<string>Open</string>
+					<string>Show</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>6AD43BA7-0998-4AA6-97C3-396AFE642967</string>
+				<key>UUID</key>
+				<string>377D3B7E-D83E-473D-89CF-44F1165E26CC</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Safari</string>
+				</array>
+				<key>arguments</key>
+				<dict/>
+			</dict>
+		</dict>
+		<dict>
+			<key>action</key>
+			<dict>
+				<key>AMAccepts</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Optional</key>
+					<true/>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>AMActionVersion</key>
+				<string>1.0.2</string>
+				<key>AMApplication</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>AMParameterProperties</key>
+				<dict>
+					<key>source</key>
+					<dict/>
+				</dict>
+				<key>AMProvides</key>
+				<dict>
+					<key>Container</key>
+					<string>List</string>
+					<key>Types</key>
+					<array>
+						<string>com.apple.applescript.object</string>
+					</array>
+				</dict>
+				<key>ActionBundlePath</key>
+				<string>/System/Library/Automator/Run AppleScript.action</string>
+				<key>ActionName</key>
+				<string>Run AppleScript</string>
+				<key>ActionParameters</key>
+				<dict>
+					<key>source</key>
+					<string>on run {}	-- Initial delay to allow images to load	delay 5.332081		-- Set hashtag count to number of tabs to cycle through	-- 5 * 30 = 150, don't exceed 350/hour		set hashtagCount to 5	set likeCount to 30		set tabsToMostRecent to 13	set timeoutSeconds to 2.0		set test to "cool"		log likeCount	-- my doPrepareTabs(hashtagCount, tabsToMostRecent, timeoutSeconds)	-- my doLikePosts(hashtagCount, likeCount)		-- return inputend runon doPrepareTabs(hashtagCount, tabsToMostRecent, timeoutSeconds)	set tabScript to "keystroke \"	\" using option down"	set returnScript to "keystroke \"
+\" "	set tabSwitchScript to "keystroke \"	\" using control down"		repeat hashtagCount times -- Once per hashtag tab		try			my doTabWithTimeout(tabScript, tabsToMostRecent, timeoutSeconds)			my doReturnWithTimeout(returnScript, timeoutSeconds)			my doTabSwitchWithTimeout(tabSwitchScript, timeoutSeconds)			delay 0.332081		on error errorMessage					end try	end repeatend doPrepareTabson doLikePosts(hashtagCount, likeCount)	set clickLikeScript to "click UI Element \"Like\" of group 1 of group 1 of group 1 of group 1 of UI Element 1 of scroll area 1 of group 1 of group 1 of tab group 1 of splitter group 1 of window 1 of application process \"Safari\""	set rightArrowScript to "keystroke \"\""	set closeTabScript to "keystroke \"w\" using command down"		repeat hashtagCount times		try			set endDate to (current date) + 15			repeat likeCount times				try					run script "tell application \"System Events\"
+					" &amp; clickLikeScript &amp; "
+					end tell"										delay 0.332081										run script "tell application \"System Events\"
+					" &amp; rightArrowScript &amp; "
+					end tell"										delay 0.332081									on error errorMessage					if ((current date) &gt; endDate) then						run script "tell application \"System Events\"
+			" &amp; closeTabScript &amp; "
+			end tell"												delay 0.332081					end if				end try			end repeat					on error errorMessage					end try				try			run script "tell application \"System Events\"
+			" &amp; closeTabScript &amp; "
+			end tell"						delay 0.332081					on error errorMessage					end try	end repeatend doLikePosts-- Tab to most recent pictureon doTabWithTimeout(tabScript, tabsToMostRecent, timeoutSeconds)	--	set endDate to (current date) + timeoutSeconds		repeat tabsToMostRecent times -- Tab to most recent picture		try			run script "tell application \"System Events\"
+" &amp; tabScript &amp; "
+end tell"			delay 0.332081					on error errorMessage					end try	end repeatend doTabWithTimeout-- Press Return to open the pictureon doReturnWithTimeout(returnScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"
+" &amp; returnScript &amp; "
+end tell"			exit repeat		on error errorMessage					end try	end repeatend doReturnWithTimeout-- Press control + tab to switch browser tabson doTabSwitchWithTimeout(tabSwitchScript, timeoutSeconds)	set endDate to (current date) + timeoutSeconds	repeat		try			run script "tell application \"System Events\"
+" &amp; tabSwitchScript &amp; "
+end tell"			exit repeat		on error errorMessage					end try	end repeatend doTabSwitchWithTimeout</string>
+				</dict>
+				<key>BundleIdentifier</key>
+				<string>com.apple.Automator.RunScript</string>
+				<key>CFBundleVersion</key>
+				<string>1.0.2</string>
+				<key>CanShowSelectedItemsWhenRun</key>
+				<false/>
+				<key>CanShowWhenRun</key>
+				<true/>
+				<key>Category</key>
+				<array>
+					<string>AMCategoryUtilities</string>
+				</array>
+				<key>Class Name</key>
+				<string>RunScriptAction</string>
+				<key>IgnoresInput</key>
+				<false/>
+				<key>InputUUID</key>
+				<string>8E25081E-4B9E-4F7D-A62B-473210B27CAB</string>
+				<key>Keywords</key>
+				<array>
+					<string>Run</string>
+				</array>
+				<key>OutputUUID</key>
+				<string>C9B4C147-B0B8-4686-8084-2C86C5ACD5F1</string>
+				<key>ShowWhenRun</key>
+				<false/>
+				<key>UUID</key>
+				<string>68CB203C-955A-4ED1-978E-4C152C7FFE59</string>
+				<key>UnlocalizedApplications</key>
+				<array>
+					<string>Automator</string>
+				</array>
+				<key>arguments</key>
+				<dict>
+					<key>0</key>
+					<dict>
+						<key>default value</key>
+						<string>on run {input, parameters}
+	
+	(* Your script goes here *)
+	
+	return input
+end run</string>
+						<key>name</key>
+						<string>source</string>
+						<key>required</key>
+						<string>0</string>
+						<key>type</key>
+						<string>0</string>
+						<key>uuid</key>
+						<string>0</string>
+					</dict>
+				</dict>
+				<key>isViewVisible</key>
+				<true/>
+				<key>location</key>
+				<string>405.000000:832.000000</string>
+				<key>nibPath</key>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
+			</dict>
+			<key>isViewVisible</key>
+			<true/>
+		</dict>
+	</array>
+	<key>connectors</key>
+	<dict>
+		<key>2CF1AC8C-093A-4A53-BDC6-231B1A446D21</key>
+		<dict>
+			<key>from</key>
+			<string>3C34EE82-157E-4795-8A3C-861CDF79DC29 - 3C34EE82-157E-4795-8A3C-861CDF79DC29</string>
+			<key>to</key>
+			<string>377D3B7E-D83E-473D-89CF-44F1165E26CC - 377D3B7E-D83E-473D-89CF-44F1165E26CC</string>
+		</dict>
+		<key>62FDF1BD-1EE2-4316-8A27-C295851D8C68</key>
+		<dict>
+			<key>from</key>
+			<string>377D3B7E-D83E-473D-89CF-44F1165E26CC - 377D3B7E-D83E-473D-89CF-44F1165E26CC</string>
+			<key>to</key>
+			<string>68CB203C-955A-4ED1-978E-4C152C7FFE59 - 68CB203C-955A-4ED1-978E-4C152C7FFE59</string>
+		</dict>
+	</dict>
+	<key>workflowMetaData</key>
+	<dict>
+		<key>workflowTypeIdentifier</key>
+		<string>com.apple.Automator.application</string>
+	</dict>
+</dict>
+</plist>
